@@ -1,0 +1,9 @@
+<launch>
+ 	
+  <node name="main_node" pkg="hippocampus_test" type="test_publisher" output="screen"/>
+  <node name="data_subscriber" pkg="hippocampus_test" type="BoatDataNew.py" output="screen"/>
+  <node name="boat_pose" pkg="hippocampus_test" type="publishBoatPosition.py" output="screen"/>
+  <node name="controller" pkg="hippocampus_test" type="BodyRateController.py" output="screen"/>
+ 
+  
+</launch>

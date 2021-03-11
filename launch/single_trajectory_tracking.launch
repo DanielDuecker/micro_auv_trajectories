@@ -1,0 +1,12 @@
+<launch>
+ 	
+  <node name="main_node" pkg="tank_tests" type="test_publisher" output="screen"/>
+  <node name="data_subscriber" pkg="tank_tests" type="BoatDataNew.py" output="screen"/>
+  <node name="boat_pose" pkg="tank_tests" type="publishBoatPosition.py" output="screen"/>
+  
+ 
+    <node pkg="rosbag" type="record" name="record"
+        args="record -o $(find tank_tests)/bags  /uuv00/mavros/local_position/velocity_body /uuv00/estimated_pose /uuv00/pose_px4 /uuv00/mavros/imu/data /hippocampus/output /hippocampus/output_2 /uuv00/mavros/local_position/velocity_local /uuv00/mavros/local_position/pose"
+    />
+  
+</launch>

@@ -1,0 +1,14 @@
+Demo.cpp
+RapidTrajectoryGenerator.cpp
+RapidTrajectoryGenerator.h
+RootFinder/cubic.hpp
+RootFinder/quadratic.hpp
+RootFinder/quartic.hpp
+RootFinder/quartic_descartes.hpp
+RootFinder/quartic_error.hpp
+RootFinder/quartic_ferrari.hpp
+RootFinder/quartic_neumark.hpp
+RootFinder/quartic_yacfraid.hpp
+SingleAxisTrajectory.cpp
+SingleAxisTrajectory.h
+Vec3.h
